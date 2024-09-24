@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  private text = "texto";
+
   constructor() {}
 
+    public onChangeText() {
+      this.text = "mudado";
+    }
+
+    public getText(){
+      return this.text;
+    }
 }
